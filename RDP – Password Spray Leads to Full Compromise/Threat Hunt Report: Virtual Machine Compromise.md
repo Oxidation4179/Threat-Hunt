@@ -1,6 +1,6 @@
 # Threat Hunt Report: Virtual Machine Compromise
 
-**Date: June 6, 2026**
+**Date: June 3, 2026**
 
 ## 🛠️ Platforms and Tools Used
 
