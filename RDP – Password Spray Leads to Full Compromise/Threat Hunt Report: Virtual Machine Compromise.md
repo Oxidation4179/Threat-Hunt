@@ -61,7 +61,7 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-![image-20260603183554539](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260603183554539.png)
+![Flag 1 - Attacker IP Address](images/flag1.png)
 
 ### 🚩 **Flag 2: Compromised Account**
 
@@ -92,7 +92,7 @@ DeviceProcessEvents
 | order by TimeGenerated
 ```
 
-![image-20260603214536651](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260603214536651.png)
+![Flag 2 - Compromised Account](images/flag2.png)
 
 ### 🚩**Flag 4: Command Line Used to Execute the Binary**
 
