@@ -71,7 +71,7 @@ DeviceLogonEvents
 - **Answer:** `slflare`
 - **Discovery:** Account name `slflar` was associated with the successful **RemoteInteractive** Logon at `2025-09-16, 6:43:46.864 p.m.`.
 
-![image-20260603184646997](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260603184646997.png)
+![Flag 2 - Compromised Account](images/flag2.png)
 
 ### 🚩 **Flag 3: Executed Binary Name**
 
@@ -92,7 +92,7 @@ DeviceProcessEvents
 | order by TimeGenerated
 ```
 
-![Flag 2 - Compromised Account](images/flag2.png)
+![Flag 3 - Executed Binary Name](images/flag3.png)
 
 ### 🚩**Flag 4: Command Line Used to Execute the Binary**
 
@@ -117,7 +117,7 @@ DeviceEvents
 | where ActionType contains "ScheduledTask"
 ```
 
-![image-20260603234948877](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260603234948877.png)
+![Flag 5 - Persistence Mechanism Created](images/flag5.png)
 
 ### 🚩 **Flag 6: What Defender Setting Was Modified?**
 
@@ -138,7 +138,7 @@ DeviceEvents
 | order by TimeGenerated asc
 ```
 
-![image-20260604003600661](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604003600661.png)
+![Flag 6 - Defender Exclusion](images/flag6.png)
 
 check `DeviceRegistryEvents` for details of defender exclusion path
 
@@ -167,7 +167,7 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-![image-20260604115151068](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604115151068.png)
+![Flag 7 - Discovery Command](images/flag7.png)
 
 ### 🚩 **Flag 8: Archive File Created by Attacker**
 
@@ -189,7 +189,7 @@ DeviceProcessEvents
   | order by TimeGenerated asc
   ```
 
-  ![image-20260604172126055](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604172126055.png)
+![Flag 8 - Archive File Created](images/flag8.png)
 
 ### 🚩 **Flag 9: C2 Connection Destination**
 
@@ -219,7 +219,7 @@ DeviceProcessEvents
 
 2. Confirmed the external destination using network connection events.
 
-![image-20260604182351370](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604182351370.png)
+![Flag 9 - C2 Connection Evidence 1](images/flag9-1.png)
 
 3. Identified `185.92.220.87` as the attacker-controlled destination.
 
@@ -234,9 +234,8 @@ DeviceNetworkEvents
 | order by TimeGenerated asc
 ```
 
-![image-20260604182631429](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604182631429.png)
-
-![image-20260604182611284](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604182611284.png)
+![Flag 9 - C2 Connection Evidence 2](images/flag9-2.png)
+![Flag 9 - C2 Connection Evidence 3](images/flag9-3.png)
 
 **### 🚩 Flag 10: Exfiltration Attempt Detected**
 
@@ -257,4 +256,4 @@ DeviceNetworkEvents
 | order by TimeGenerated asc
 ```
 
-![image-20260604182611284](C:\Users\d5423\AppData\Roaming\Typora\typora-user-images\image-20260604182611284.png)
+![Flag 10 - Exfiltration Attempt Detected](images/flag10.png)
