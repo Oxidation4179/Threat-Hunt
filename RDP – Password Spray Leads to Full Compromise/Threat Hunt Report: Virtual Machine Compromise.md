@@ -237,7 +237,7 @@ DeviceNetworkEvents
 ![Flag 9 - C2 Connection Evidence 2](images/flag9-2.png)
 ![Flag 9 - C2 Connection Evidence 3](images/flag9-3.png)
 
-**### 🚩 Flag 10: Exfiltration Attempt Detected**
+### 🚩 Flag 10: Exfiltration Attempt Detected
 
 - **MITRE Technique:**
   🔸 T1048.003 – Exfiltration Over Unencrypted Protocol
