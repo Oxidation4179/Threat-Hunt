@@ -4,7 +4,7 @@
 
 ## 🛠️ Platforms and Tools Used
 
-Microsoft Sentinel, Microsoft Defender for Endpoint (MDE), Advanced Hunting (KQL), Windows 11 host `Threat-hunt1-kent`
+Microsoft Sentinel, Microsoft Defender for Endpoint (MDE), Advanced Hunting (KQL), Windows 11 host
 
 ## 🧠 Scenario Overview
 
